@@ -237,9 +237,6 @@ h1 {
     overflow: hidden;
 }
 
-/* зробити правильний відступ посередині між текстом і картинкою */
-
-
 .designer-column {
     width: 50%;
     float: left;
@@ -281,8 +278,6 @@ h1 {
 .prod-man-section .container {
     overflow: hidden;
 }
-
-/* зробити правильний відступ посередині між текстом і картинкою */
 
 .prod-man-column {
     width: 50%;
@@ -353,8 +348,6 @@ h1 {
 .marketers-section .container {
     overflow: hidden;
 }
-
-/* зробити правильний відступ посередині між текстом і картинкою */
 
 .marketers-column {
     width: 50%;
@@ -448,8 +441,6 @@ h1 {
     height: 48px;
     margin-bottom: 20px;
 }
-
-/* зробити правильний відступ кнопки від форми */
 
 .footer-form a{
     max-width: 175px;
