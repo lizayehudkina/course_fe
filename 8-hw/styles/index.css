@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 793px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header .container{
+    background-color: #4A4F56;
+    color: #FF8984;
+    padding: 10px 0;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF8984;
+}
+
+.span_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FF8984;
+}
+
+.main-list .container {
+    background-color: #3B3F45;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+.list {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    max-width: 535px;
+    margin: 0 auto;
+    padding: 20px 0 45px 0;
+}
+
+.span-list {
+    font-size: 11px; 
+}
+
+.list li {
+    background-color: #88839E;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    max-height: 45px;
+}
+
+.list-item {
+transition-duration: 0.3s;
+}
+
+.list-item:hover {
+    border: 3px solid blue;
+}
+
+.list-item:nth-child(2) {
+    background-color: #7A7593;
+    box-shadow: 0px 15px 35px #393645;
+}
+
+.list-item:nth-child(4) {
+    background-color: #625E77;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;;
+}
+
+.list-item:nth-child(6) {
+    background-color: #7A7593;
+}
+           
+input:checked + label {
+    text-decoration: line-through;
+}
+
+.list-item input{
+    display: none;
+}
+
+.list-item label:before{
+    content: '';
+    color: black;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+}
+
+.list-item input:checked + label::before {
+    content: '\2714';
+}
+
+.list-item label {
+    transition: background-color ease-in-out 0.3s ;
+}
+
+.button .container {
+    background-color: #3B3F45;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    background-color: #4A4F56;
+    color: #FF8984;	
+    text-align: center;
+    height: 45px;
+    width: 535px;
+    margin-bottom: 45px;
+}
+
+
+
+
