@@ -246,6 +246,11 @@ h1 {
     padding-bottom: 100px;
 }
 
+.designer-column-left {
+    width: 40%;
+    margin-right: 10%;
+}
+
 .text-holder-designer-sect {
     font-family: 'Poppins';
     font-style: normal;
@@ -283,6 +288,11 @@ h1 {
     width: 50%;
     float: left;
     padding-bottom: 100px;
+}
+
+.prod-man-column-right {
+    width: 40%;
+    margin-left: 10%;
 }
 
 .prod-man-text-item {
@@ -350,6 +360,11 @@ h1 {
     width: 50%;
     float: left;
     padding-bottom: 100px;
+}
+
+.marketers-column-left {
+    width: 40%;
+    margin-right: 10%;
 }
 
 .text-holder-marketers-sect {
