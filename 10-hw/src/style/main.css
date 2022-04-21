@@ -14,11 +14,15 @@
 }
 
 .header .container {
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.logo-holder {
-    float: left;
+.nav-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 img {
@@ -26,20 +30,11 @@ img {
     max-width: 100%;
 }
 
-.nav-holder {
-    float: right;
-}
-
-.nav {
-    float: left;
-}
-
 .nav-list,
 .btn-list,
 .hero-btn-list,
 .sppwr-list,
-.nav-footer-list,
-.nav-footer-scndclmn-list {
+.nav-footer-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -174,8 +169,15 @@ h1 {
     color: #544837;
 }
 
-.sppwr .container {
-    overflow: hidden;
+.sppwr-list {
+    display: flex;
+}
+
+.text-sppwr-item {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 45px;
 }
 
 .sppwr-column h1 {
@@ -189,22 +191,6 @@ h1 {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 55px;
-}
-
-.sppwr-list {
-    list-style: none;
-    margin: 0 55px;
-    margin-right: -20px;
-    overflow: hidden;
-}
-
-.text-sppwr-item {
-    display: inline-block;
-    width: 100%;
-    max-width: 240px;
-    margin: 0 auto;
-    padding-bottom: 35px;
-    vertical-align: top;
 }
 
 .headers-sppwr-list {
@@ -387,6 +373,9 @@ h1 {
     color: #2F281E;
 }  */
 
+
+/* переробити на флексбокс */
+
 .footer .container {
     overflow: hidden;
 }
@@ -440,7 +429,6 @@ h1 {
 .footer-form a{
     max-width: 175px;
     text-align: center;
-    display: inherit;
 }
 
 
