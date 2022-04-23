@@ -177,7 +177,6 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    margin-right: 45px;
 }
 
 .sppwr-column h1 {
@@ -202,6 +201,9 @@ h1 {
     color: #2F281E;
 }
 
+/* потрібно прибрати відступ справа від останнього li, 
+щоб прилягав до правого краю */
+
 .text-sppwr-list {
     font-family: 'Poppins';
     font-style: normal;
@@ -219,217 +221,61 @@ h1 {
     padding-bottom: 100px;
 }
 
-/* .designer-section .container {
-    overflow: hidden;
-}
-
-.designer-column {
-    width: 50%;
-    float: left;
-    padding-bottom: 100px;
-}
-
-.designer-column-left {
-    width: 40%;
-    margin-right: 10%;
-}
-
-.text-holder-designer-sect {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #544837;
-    margin: 0;
-    padding: 0;
-}
-
-.designer-title {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    color: #2F281E;
-    margin-bottom: 20px;
-}
-
-.header-holder-designer-sect {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    color: #2F281E;
-}
-
-.prod-man-section .container {
-    overflow: hidden;
-}
-
-.prod-man-column {
-    width: 50%;
-    float: left;
-    padding-bottom: 100px;
-}
-
-.prod-man-column-right {
-    width: 40%;
-    margin-left: 10%;
-}
-
-.prod-man-text-item {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #544837;
-}
-
-.prod-man-title {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    color: #2F281E;
-}
-
-.prod-man-text-item:last-of-type {
-    margin-bottom: 30px;
-}
-
-.prod-man-list {
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-}
-
-/* зробити, щоб текст не вилазив під значки, 
-а вирівнювався, як в макеті */
-
-/* .prod-man-list li{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #544837;
-    padding-bottom: 30px;
-    list-style-position: outside;
-} */
-
-/* зробити більший розмір оранжевих list-style, 
-щоб при тому нічого не з'їжджало */
-
-/* .prod-man-list li::before{
-    content: '\2714';
-    text-align: center;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: #FF9900;
-    color: white;
-    float: left;
-    margin-right: 30px;
-}
-
-.marketers-section .container {
-    overflow: hidden;
-}
-
-.marketers-column {
-    width: 50%;
-    float: left;
-    padding-bottom: 100px;
-}
-
-.marketers-column-left {
-    width: 40%;
-    margin-right: 10%;
-}
-
-.text-holder-marketers-sect {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #544837;
-    margin: 0;
-    padding: 0;
-}
-
-.marketers-title {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    color: #2F281E;
-    margin-bottom: 20px;
-}
-
-.header-holder-marketers-sect {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    color: #2F281E;
-}  */
-
-
-/* переробити на флексбокс */
+/* потрібно зробити бордер меншим,
+не на всю ширину екрану  */
 
 .footer .container {
-    overflow: hidden;
+    border-top: 1px solid #979797;
+    padding-top: 102px;
 }
 
-.footer-logo-holder {
-    float: left;
+.list-for-flex {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
 }
 
-.footer-holder {
-    float: right;
-}
+/* потрібно опустити список нижче 
+(вирівнювання по низу через nth-child(2)?) */
 
-.nav-footer {
-    float: left;
-}
-
-.footer-form {
-    float: right;
-    margin: 50px 20px;
-}
-
-.nav-footer-list {
-    margin-right: 45px;
-    padding: 50px 20px;
+.footer-flex-list {
+    list-style: none;
     column-count: 2;
 }
 
-.nav-footer-item{
-    padding: 0 10px;
-}
-
-.nav-footer-link {
+.footer-flex-list a {
     text-decoration: none;
     font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 35px;
     color: #544837;
 }
 
-.footer-form input{
-    margin: 0 auto;
-    border: 1px solid #BCD0E5;
-    background-color: white;
+.footer-form input {
+    border: 1px solid #544837;
+    border-radius: 5px;
     width: 325px;
     height: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
-.footer-form a{
-    max-width: 175px;
-    text-align: center;
+/* потрібно опустити форму з кнопкою нижче 
+(вирівнювання по низу через nth-child(3)?) */
+
+.footer-form a {
+    max-width: 131px;
+    max-height: 39px;
+    border-radius: 5px;
+    padding: 10px 15px;
 }
+
+
+
+
+
+
+
+
 
 
 
