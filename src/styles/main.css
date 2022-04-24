@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #3399CC;
+    border: 14px solid #2B81AC;
+    border-right: none;
+}
+
+.cities-list {
+    overflow: hidden;
+    padding: 97px 133px 98px;
+    font-size: 0;
+    transition: all .1s ease-in;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    border: 3px solid white;
+    height: 79px;
+    text-align: center;
+    /* vertical-align: middle; не працює */
+    padding-top: 15px;
+}
+
+/* зробити, щоб прозорість 70 діяла на все, 
+крім того, на що наводжу мишкою. а не навпаки, як зараз */
+
+li:hover {
+    opacity: 70%;
+}
+
+.degrees {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.lisbon {
+    width: 50%;
+    background-color: #3399CC;
+    border-right: none;
+}
+
+.paris {
+    width: 25%;
+    background-color: #33CCCC;
+    border-right: none;
+}
+
+.belgrad {
+    width: 25%;
+    background-color: #996699;
+}
+
+.venice {
+    width: 25%;
+    background-color: #C24747;
+    border-top: none;
+    border-right: none;
+}
+
+.telaviv {
+    width: 25%;
+    background-color: #E2674A;
+    border-top: none;
+    border-right: none;
+}
+
+.kyiv {
+    width: 25%;
+    background-color: #FFCC66;
+    border-top: none;
+    border-right: none;
+}
+
+.amster {
+    width: 25%;
+    background-color: #99CC99;
+    border-top: none;
+}
+
+.tokyo {
+    width: 25%;
+    background-color: #669999;
+    border-top: none;
+    border-right: none;
+}
+
+.sanfrancisco {
+    width: 50%;
+    background-color: #CC6699;
+    border-top: none;
+    border-right: none;
+}
+
+.sydney {
+    width: 25%;
+    background-color: #339966;
+    border-top: none;
+}
+
+.newdelhi {
+    width: 100%;
+    background-color: #666699;
+    border-top: none;
+}
