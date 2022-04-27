@@ -10,7 +10,7 @@
 }
 
 .header {
-    padding: 35px 0;
+    padding: 30px 0;
 }
 
 .header .container {
@@ -104,11 +104,16 @@ img {
 
 .hero-section .container {
     overflow: hidden;
+    padding-bottom: 111px;
 }
 
 .hero-column {
     width: 50%;
     float: left;
+}
+
+.hero-column:first-child {
+    padding-top: 113px;
 }
 
 .hero-title {
@@ -154,11 +159,13 @@ img {
 }
 
 h1 {
+    margin: 0;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
     color: #2F281E;  
+    max-width: 518px;
 }
 
 .text-holder {
@@ -167,19 +174,28 @@ h1 {
     font-weight: 400;
     font-size: 18px;
     color: #544837;
+    max-width: 458px;
+}
+
+.sppwr-section .container {
+    border-bottom: 1px solid #979797;
 }
 
 .sppwr-list {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 34px;
 }
 
 .text-sppwr-item {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    width: 25%;
+    padding: 0 15px;
 }
 
-.sppwr-column h1 {
+.sppwr-column-header {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -188,8 +204,7 @@ h1 {
     color: #2F281E; 
     max-width: 540px;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 55px;
+    margin: 0 auto 54px;
 }
 
 .headers-sppwr-list {
@@ -200,9 +215,6 @@ h1 {
     line-height: 33px;
     color: #2F281E;
 }
-
-/* потрібно прибрати відступ справа від останнього li, 
-щоб прилягав до правого краю */
 
 .text-sppwr-list {
     font-family: 'Poppins';
@@ -218,30 +230,28 @@ h1 {
     display: block;
     max-width: 175px;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 146px;
 }
-
-/* потрібно зробити бордер меншим,
-не на всю ширину екрану  */
-
-.footer .container {
-    border-top: 1px solid #979797;
-    padding-top: 102px;
-}
-
-/* потрібно підняти лого вище
-(вирівнювання по верху через nth-child(1)?) */
 
 .list-for-flex {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
+    padding-top: 102px;
 }
 
 .footer-flex-list {
     list-style: none;
     column-count: 2;
+}
+
+.footer-flex-items:nth-child(2) {
+    align-self: flex-end;
+}
+
+.footer-flex-items:last-child {
+    align-self: flex-end;
+    padding-bottom: 20px;
 }
 
 .footer-flex-list a {
@@ -259,12 +269,10 @@ h1 {
     margin-bottom: 21px;
 }
 
-/* потрібно опустити форму з кнопкою нижче 
-(вирівнювання по низу через nth-child(3)?) */
-
-.footer-form a {
-    max-width: 131px;
+.footer-form button {
+    max-width: 135px;
     max-height: 39px;
+    border: none;
     border-radius: 5px;
     padding: 10px 15px;
 }
