@@ -229,15 +229,15 @@ h1 {
     padding-top: 102px;
 }
 
+/* потрібно підняти лого вище
+(вирівнювання по верху через nth-child(1)?) */
+
 .list-for-flex {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
 }
-
-/* потрібно опустити список нижче 
-(вирівнювання по низу через nth-child(2)?) */
 
 .footer-flex-list {
     list-style: none;
