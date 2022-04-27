@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+
+}
+
+.flex-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list-items a {
+    text-decoration: none;
+}
+
+.logo-holder img {
+    display: flex;
+    max-width: 243px;
+    max-height: 55px;
+
+}
+
+
+
+
+
+
