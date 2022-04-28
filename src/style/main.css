@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    max-width: 1822px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'pt_sans';
+}
+
 .flex-header {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +38,10 @@
     text-decoration: none;
 }
 
+.nav-list-items:first-child {
+    padding-top: 5px;
+}
+
 .logo-holder {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +52,14 @@
     max-width: 243px;
     max-height: 55px;
     width: 25%;
+}
+
+.undrln {
+    text-decoration: underline;
+}
+
+.bcgrnd-clr {
+    background-color: #EDEDED;
 }
 
 
