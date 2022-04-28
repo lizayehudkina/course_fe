@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-
-}
-
 .flex-header {
     display: flex;
     flex-wrap: wrap;
@@ -31,11 +27,16 @@
     text-decoration: none;
 }
 
-.logo-holder img {
+.logo-holder {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.logo-holder img{
     max-width: 243px;
     max-height: 55px;
-
+    width: 25%;
 }
 
 
