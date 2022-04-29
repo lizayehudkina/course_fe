@@ -1,0 +1,115 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1822px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'pt_sans';
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+}
+
+.flex-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list-items a {
+    text-decoration: none;
+    font-family: 'roboto';
+    font-size: 20px;
+    color: black;
+}
+
+.nav-list-items:first-child {
+    padding-top: 10px;
+}
+
+.logo-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.logo-holder img{
+    width: 243px;
+    height: 55px;
+}
+
+dl, dt, dd, p {
+    padding: 0;
+    margin: 0;
+}
+
+.description-headers {
+    font-family: 'roboto';
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.description-prgrph {
+    margin-bottom: 35px;
+}
+
+.undrln {
+    text-decoration: underline;
+}
+
+.react-list,
+.react-list-items {
+    padding: 0;
+    margin: 0;
+}
+
+.react-list-items {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.react-list-items::before{
+    content: '+ ';
+}
+
+.react-list-items:last-of-type {
+    margin-bottom: 35px;
+}
+
+.bcgrnd-clr {
+    background-color: #EDEDED;
+}
+
+.react-list-headers {
+    font-family: 'pt_sans';
+    font-weight: 700;
+}
+
+
+
+
+
+
