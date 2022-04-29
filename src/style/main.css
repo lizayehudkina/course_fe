@@ -12,22 +12,25 @@
 }
 
 body {
-    font-family: 'pt_sans';
+    font-family: 'pt_sans_regular';
+    margin: 0;
 }
 
 .flex-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .nav-list {
     display: flex;
     flex-wrap: wrap;
-    width: 25%;
+    width: 15%;
     justify-content: space-around;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
 
 .nav-list li {
@@ -36,6 +39,13 @@ body {
 
 .nav-list-items a {
     text-decoration: none;
+    font-family: 'roboto_regular';
+    font-size: 10px;
+    color: black;
+}
+
+.nav-list img {
+    width: 50%;
 }
 
 .nav-list-items:first-child {
@@ -51,15 +61,52 @@ body {
 .logo-holder img{
     max-width: 243px;
     max-height: 55px;
-    width: 25%;
+    width: 100%;
+}
+
+dl, dt, dd, p {
+    padding: 0;
+    margin: 0;
+}
+
+.description-headers {
+    font-family: 'roboto_black';
+    margin-bottom: 30px;
+}
+
+.description-prgrph {
+    margin-bottom: 35px;
 }
 
 .undrln {
     text-decoration: underline;
 }
 
+.react-list,
+.react-list-items {
+    padding: 0;
+    margin: 0;
+}
+
+.react-list-items {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.react-list-items::before{
+    content: '+ ';
+}
+
+.react-list-items:last-of-type {
+    margin-bottom: 35px;
+}
+
 .bcgrnd-clr {
     background-color: #EDEDED;
+}
+
+.react-list-headers {
+    font-family: 'pt_sans_bold';
 }
 
 
