@@ -12,7 +12,9 @@
 }
 
 body {
-    font-family: 'pt_sans_regular';
+    font-family: 'pt_sans';
+    font-weight: 400;
+    font-size: 36px;
     margin: 0;
 }
 
@@ -26,7 +28,7 @@ body {
 .nav-list {
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 25%;
     justify-content: space-around;
     align-items: center;
     padding: 0;
@@ -39,29 +41,24 @@ body {
 
 .nav-list-items a {
     text-decoration: none;
-    font-family: 'roboto_regular';
-    font-size: 10px;
+    font-family: 'roboto';
+    font-size: 20px;
     color: black;
 }
 
-.nav-list img {
-    width: 50%;
-}
-
 .nav-list-items:first-child {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .logo-holder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    align-self: center;
 }
 
 .logo-holder img{
-    max-width: 243px;
-    max-height: 55px;
-    width: 100%;
+    width: 243px;
+    height: 55px;
 }
 
 dl, dt, dd, p {
@@ -70,7 +67,8 @@ dl, dt, dd, p {
 }
 
 .description-headers {
-    font-family: 'roboto_black';
+    font-family: 'roboto';
+    font-weight: 900;
     margin-bottom: 30px;
 }
 
@@ -106,7 +104,8 @@ dl, dt, dd, p {
 }
 
 .react-list-headers {
-    font-family: 'pt_sans_bold';
+    font-family: 'pt_sans';
+    font-weight: 700;
 }
 
 
