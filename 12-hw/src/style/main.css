@@ -4,25 +4,32 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    max-width: 1822px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 body {
     font-family: 'pt_sans';
     font-weight: 400;
     font-size: 36px;
-    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1822px;
+    margin: 0 auto;
+}
+
+.header .container {
+    background-color: pink;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .flex-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 35px;
 }
 
 .nav-list {
@@ -31,12 +38,15 @@ body {
     width: 25%;
     justify-content: space-around;
     align-items: center;
-    padding: 0;
-    margin: 0;
+
 }
 
 .nav-list li {
     list-style: none;
+}
+
+.nav-list li:first-of-type {
+    padding-top: 10px;
 }
 
 .nav-list-items a {
@@ -44,10 +54,6 @@ body {
     font-family: 'roboto';
     font-size: 20px;
     color: black;
-}
-
-.nav-list-items:first-child {
-    padding-top: 10px;
 }
 
 .logo-holder {
@@ -61,46 +67,49 @@ body {
     height: 55px;
 }
 
-dl, dt, dd, p {
-    padding: 0;
+
+.main .container {
+    position: relative;
+    padding-top: 128px;
+}
+
+.left-side {
+    position: sticky;
+    top: 128px;
+    width: 35%;
+    background-color: aquamarine;
+}
+
+.descr-headers-left-side {
+    font-family: 'roboto';
+    font-weight: 900;
+    margin-bottom: 92px;
+}
+
+.right-side {
+    width: 65%;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+    top: 128px;
+}
+
+dl, dt, dd {
     margin: 0;
+    padding: 0;
 }
 
 .description-headers {
     font-family: 'roboto';
     font-weight: 900;
-    margin-bottom: 30px;
-}
-
-.description-prgrph {
-    margin-bottom: 35px;
 }
 
 .undrln {
     text-decoration: underline;
 }
 
-.react-list,
-.react-list-items {
+.react-list {
     padding: 0;
-    margin: 0;
-}
-
-.react-list-items {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.react-list-items::before{
-    content: '+ ';
-}
-
-.react-list-items:last-of-type {
-    margin-bottom: 35px;
-}
-
-.bcgrnd-clr {
-    background-color: #EDEDED;
 }
 
 .react-list-headers {
@@ -108,7 +117,17 @@ dl, dt, dd, p {
     font-weight: 700;
 }
 
+.react-list-items {
+    list-style: none;
+}
 
+.react-list-items::before{
+    content: '+ ';
+}
+
+.bcgrnd-clr {
+    background-color: #EDEDED;
+}
 
 
 
