@@ -23,7 +23,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-
 }
 
 .flex-header {
@@ -104,6 +103,16 @@ dl, dt, dd {
     font-weight: 900;
 }
 
+.description-headers::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 0px;
+    border: 12px solid #000000;
+    transform: rotate(0.42deg);
+    background-color: #000000;
+}
+
 .undrln {
     text-decoration: underline;
 }
@@ -129,6 +138,18 @@ dl, dt, dd {
     background-color: #EDEDED;
 }
 
+.img-holder {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.image-detail {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
 
 
 
