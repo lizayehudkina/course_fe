@@ -130,11 +130,6 @@ dl, dt, dd {
     padding: 0;
 }
 
-.react-list-headers {
-    font-family: 'pt_sans';
-    font-weight: 700;
-}
-
 .react-list-items {
     list-style: none;
 }
