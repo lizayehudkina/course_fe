@@ -73,18 +73,18 @@ body {
     padding-top: 128px;
 }
 
-.left-side {
+.sidebar {
     position: sticky;
     top: 128px;
     width: 35%;
     /* background-color: aquamarine; */
 }
 
-.left-side dt {
+.sidebar dt {
     border-bottom: 1px solid gray;
 }
 
-.descr-headers-left-side {
+.descr-headers-sidebar {
     font-family: 'roboto';
     font-weight: 900;
     margin-bottom: 92px;
