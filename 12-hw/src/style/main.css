@@ -17,7 +17,7 @@ body {
 }
 
 .header .container {
-    background-color: pink;
+    background-color: white;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -77,7 +77,7 @@ body {
     position: sticky;
     top: 128px;
     width: 35%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .descr-headers-left-side {
@@ -88,7 +88,7 @@ body {
 
 .right-side {
     width: 65%;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
     right: 0;
     top: 128px;
