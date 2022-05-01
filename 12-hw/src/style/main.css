@@ -14,6 +14,7 @@ body {
     width: 100%;
     max-width: 1822px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header .container {
@@ -77,6 +78,10 @@ body {
     top: 128px;
     width: 35%;
     /* background-color: aquamarine; */
+}
+
+.left-side dt {
+    border-bottom: 1px solid gray;
 }
 
 .descr-headers-left-side {
