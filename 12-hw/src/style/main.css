@@ -73,6 +73,10 @@ body {
     padding-top: 128px;
 }
 
+.sidebar-rel {
+    position: relative;
+}
+
 .sidebar {
     position: sticky;
     top: 128px;
