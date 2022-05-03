@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-an-account</title>
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    <script src="https://kit.fontawesome.com/d7ec00324f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="div-for-flex">
+                <div class="div-list">
+                    <h1>Create an Account</h1>
+                        <form action="#">
+                            <ul>
+                                <div class="first-last-name">
+                                    <li class="list-item-first-name">
+                                        <label class for="text">First name</label><br>
+                                        <input class="input-half" type="text">
+                                        
+                                    </li>
+                                    <li class="list-item-last-name">
+                                        <label for="text">Last name</label><br>
+                                        <input class="input-half" type="text">
+                                    </li>
+                                </div>
+                                    <li class="list-item-email">
+                                        <label for="email">E-mail</label><br>
+                                        <input type="email">
+                                            <div class="p-email">
+                                                <p>We'll never share your email with anyone else.</p>
+                                            </div>
+                                    </li>
+                                    <li class="list-item-radio">
+                                        <input id="male" type="radio" name="radio">
+                                        <label for="male"><span class="spanradio"></span>Male</label>
+                                        <input id="female" type="radio" name="radio">
+                                        <label for="female"><span class="spanradio"></span>Female</label>
+                                    </li>
+                                <div class="country-city">
+                                    <li class="list-item-country">
+                                        <label class="label-country-city" for="country-select">Country</label><br>
+                                        <select class="input-half" name="country" id="country-select">
+                                            <option value="1">Select </option>
+                                            <option value="1">Ukraine</option>
+                                            <option value="1">Poland</option>
+                                            <option value="1">Portugal</option>
+                                            <option value="1">Spain</option>
+                                            <option value="1">Italy</option>
+                                        </select>       
+                                    </li>
+                                    <li class="list-item-city">
+                                        <label class="label-country-city" for="text">City</label><br>
+                                        <input class="input-half" type="text">
+                                    </li>
+                                </div>
+                                    <li class="list-item-textarea">
+                                        <textarea name="Your text" id="textarea" cols="30" rows="1"></textarea> 
+                                    </li>
+                            </ul>
+                        </form>
+                            <div>
+                                <p class="p-terms-of-use">By clicking the 'Sign Up' button, you confirm that you accept our <br> <a href="#">Terms of Use</a> 
+                                    and <a href="#">Privacy Policy</a>.</p>
+                                <p class="p-have-an-acc">Have an accont? <a href="#"><strong>Log in</strong></a>.</p>
+                            </div>
+                </div>
+
+                            <!-- 2й ліст -->
+                <div class="div-list">
+                    <h2>Profile</h2>
+                        <form action="#">
+                            <ul>
+                                <div class="photo-file-clear">
+                                    <img src="src/img/profile-pic.png" alt="profile pictures=">
+                                    <div>
+                                        <input type="file">
+                                        <p class="p-photo">Up to 1 MB (300x300 px)</p>
+                                    </div>
+                                    <button><i class="fa-solid fa-trash"></i></button>
+                                </div>
+                                <div class="first-name-email">
+                                    <li class="list-item-first-name">
+                                        <label for="text">Name</label><br>
+                                        <input type="text">   
+                                    </li>
+                                    <li class="list-item-email-second">
+                                        <label for="email">E-mail</label><br>
+                                        <input type="email">
+                                    </li>
+                                </div>
+                                <div class="country-city">
+                                    <li class="list-item-country">
+                                        <label for="country-select">Country</label><br>
+                                        <select name="country" id="country-select">
+                                            <option value="1">Select </option>
+                                            <option value="1">Ukraine</option>
+                                            <option value="1">Poland</option>
+                                            <option value="1">Portugal</option>
+                                            <option value="1">Spain</option>
+                                            <option value="1">Italy</option>
+                                        </select>       
+                                    </li>
+                                    <li class="list-item-city">
+                                        <label for="text">City</label><br>
+                                        <input type="text">
+                                    </li>
+                                </div>
+
+                                <div class="zip-phone">
+                                    <li class="list-item-zip">
+                                        <label for="text">Zip Code</label><br>
+                                        <input type="text">       
+                                    </li>
+                                    <li class="list-item-phone">
+                                        <label for="number">Phone number</label><br>
+                                        <input type="number">
+                                    </li>
+                                </div>
+                                    <li class="list-item-textarea">
+                                        <textarea name="Your text" id="textarea" cols="15" rows="1"></textarea> 
+                                    </li>
+                            </ul>
+                        </form>   
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
