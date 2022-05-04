@@ -45,7 +45,7 @@
                                 <div class="country-city">
                                     <li class="list-item-country">
                                         <label class="label-country-city" for="country-select">Country</label><br>
-                                        <select class="input-half" name="country" id="country-select">
+                                        <select class="input-country-select" name="country" id="country-select">
                                             <option value="1">Select </option>
                                             <option value="1">Ukraine</option>
                                             <option value="1">Poland</option>
@@ -77,12 +77,16 @@
                         <form action="#">
                             <ul>
                                 <div class="photo-file-clear">
-                                    <img src="src/img/profile-pic.png" alt="profile pictures=">
-                                    <div>
-                                        <input type="file">
+                                    <div class="photo-holder">
+                                        <img src="src/img/profile-pic.png" alt="profile pictures=">
+                                    </div>
+                                    <div class="choose-photo-holder">
+                                        <div class="input-photo-holder">
+                                            <input class="custom-file-input" type="file" name="type-file" id="type-file">
+                                        </div>
                                         <p class="p-photo">Up to 1 MB (300x300 px)</p>
                                     </div>
-                                    <button><i class="fa-solid fa-trash"></i></button>
+                                    <button class="btn"><i class="fa-solid fa-trash"></i></button>
                                 </div>
                                 <div class="first-name-email">
                                     <li class="list-item-first-name">
@@ -97,7 +101,7 @@
                                 <div class="country-city">
                                     <li class="list-item-country">
                                         <label for="country-select">Country</label><br>
-                                        <select name="country" id="country-select">
+                                        <select class="input-country-select" name="country" id="country-select">
                                             <option value="1">Select </option>
                                             <option value="1">Ukraine</option>
                                             <option value="1">Poland</option>
@@ -118,8 +122,8 @@
                                         <input type="text">       
                                     </li>
                                     <li class="list-item-phone">
-                                        <label for="number">Phone number</label><br>
-                                        <input type="number">
+                                        <label for="tel">Phone number</label><br>
+                                        <input type="tel">
                                     </li>
                                 </div>
                                     <li class="list-item-textarea">
