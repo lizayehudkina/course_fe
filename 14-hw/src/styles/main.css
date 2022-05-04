@@ -57,7 +57,7 @@ input {
 
 input:focus {
     border-radius: 6px;
-    border: 2px solid blue;
+    border: 2px solid #007BFF;
 }
 
 input, select {
@@ -157,7 +157,7 @@ label .spanradio {
 
 .list-item-textarea textarea:focus {
     border-radius: 6px;
-    border: 2px solid blue;
+    border: 2px solid #007BFF;
 }
 
 .p-terms-of-use {
