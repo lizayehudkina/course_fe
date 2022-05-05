@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: ;
+    font-family: 'roboto';
 }
 
 .container {
@@ -19,4 +19,35 @@ body {
     padding-top: 35px;
     padding-bottom: 48px;
     border-bottom: 1px solid #EFEEF3;
+}
+
+.p-services {
+    margin: 0;
+    padding: 0;
+    padding: 55px 0 17px 0;
+    font-size: 16px;
+    color: #7690A8;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 35px 0;
+    font-family: 'nunito_sans';
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+}
+
+.services-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.services-list li {
+    list-style: none;
+    padding: 41px 45px 46px 41px;
+    margin-right: 39px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
 }
