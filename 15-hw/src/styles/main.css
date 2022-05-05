@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ;
+}
+
+.container {
+    width: 100%;
+    max-width: 1185px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo-holder {
+    padding-top: 35px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #EFEEF3;
+}
