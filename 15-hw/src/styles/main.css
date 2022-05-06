@@ -15,10 +15,19 @@ body {
     margin: 0 auto;
 }
 
+.main .container {
+    padding-bottom: 69px;
+}
+
 .logo-holder {
     padding-top: 35px;
     padding-bottom: 48px;
     border-bottom: 1px solid #EFEEF3;
+}
+
+.logo svg path:last-of-type:hover {
+    content: '';
+    fill: #3DB370;
 }
 
 .p-services {
@@ -42,12 +51,12 @@ h1 {
 .services-list {
     display: flex;
     padding-left: 0;
+    justify-content: space-between;
 }
 
 .services-list li {
     list-style: none;
     padding: 41px 32px 46px 41px;
-    margin-right: 39px;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
 }
@@ -103,8 +112,54 @@ h2 {
 }
 
 .footer .container {
-    /* background-color: #16133D; */
+    background-color: #16133D;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
     width: 100%;
+}
+
+.logo-holder-footer {
+    padding: 36px 0 40px 0;
+}
+
+.icons-list {
+    padding: 0 0 45px 0;
+    margin: 0;
+}
+
+.icons-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    background: #EFEEF3;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.svg-sprite {
+    background-image: url("../img/svg-sprite-action.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+
+.svg-sprite.icon-second {
+    background-position: -24px 0;  
+}
+
+.svg-sprite.icon-third {
+    background-position: -48px 0;
+}
+
+.svg-sprite.icon-fourth {
+    background-position: 0 -24px; 
+}
+
+.svg-sprite.icon-fifth {
+    background-position: 0 -48px; 
 }
 
 
