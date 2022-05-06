@@ -25,8 +25,10 @@ body {
     border-bottom: 1px solid #EFEEF3;
 }
 
-.logo svg path:first-of-type {
-    fill: white;
+.logo svg path:first-of-type:hover {
+    content: '';
+    stroke: #16133D;
+    transition-duration: 0.3s;
 }
 
 .logo svg path:last-of-type:hover {
@@ -142,6 +144,11 @@ h2 {
     background: #EFEEF3;
     border-radius: 5px;
     margin-right: 8px;
+}
+
+.icons-list li:hover {
+    background: #3DB370;
+    transition-duration: 0.3s;  
 }
 
 .svg-sprite {
