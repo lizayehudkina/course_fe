@@ -45,6 +45,7 @@ h1 {
 
 .services-list {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     justify-content: space-between;
 }
@@ -52,6 +53,7 @@ h1 {
 .services-list li {
     list-style: none;
     padding: 41px 32px 46px 41px;
+    width: 33%;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
 }
@@ -116,13 +118,9 @@ h2 {
     color: #16133D;
 }
 
-.footer .container {
+.footer {
     background-color: #16133D;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
+    margin: 0;
 }
 
 .logo-holder-footer {
