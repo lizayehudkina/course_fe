@@ -25,9 +25,14 @@ body {
     border-bottom: 1px solid #EFEEF3;
 }
 
+.logo svg path:first-of-type {
+    fill: white;
+}
+
 .logo svg path:last-of-type:hover {
     content: '';
     fill: #3DB370;
+    transition-duration: 0.3s;
 }
 
 .p-services {
@@ -65,6 +70,7 @@ h1 {
     content: '';
     border: 1px solid #3DB370;
     border-radius: 8px;
+    transition-duration: 0.3s;
 }
 
 .svg-holder {
