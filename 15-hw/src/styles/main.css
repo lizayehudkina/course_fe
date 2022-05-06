@@ -73,6 +73,11 @@ h1 {
     margin: 41px 0 28px 30px;
 }
 
+.svg-holder:hover {
+    border: 1px solid #3DB370;
+    border-radius: 16px;
+}
+
 .svg-holder svg{
     width: 38px;
     height: 35px;
@@ -80,6 +85,10 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+
+.svg-holder:hover .last {
+    fill:#3DB370;
 }
 
 h2 {
