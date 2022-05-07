@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1185px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "roboto";
+}
+
+.footer {
+  background-color: #16133D;
+  padding: 36px 0 45px;
+}
+/*# sourceMappingURL=main.css.map */
