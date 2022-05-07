@@ -53,7 +53,7 @@ h1 {
 .services-list li {
     list-style: none;
     padding: 41px 32px 46px 41px;
-    width: 33%;
+    width: 30%;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
 }
@@ -71,8 +71,7 @@ h1 {
     width: 64px;
     height: 64px;
     position: relative;
-    transform: translate(-50%, -50%);
-    margin: 41px 0 28px 30px;
+    margin: 0 0 30px;
 }
 
 .svg-holder:hover {
