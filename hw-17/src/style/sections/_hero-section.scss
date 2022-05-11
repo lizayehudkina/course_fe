@@ -61,7 +61,6 @@
     }
     
     .video-link {
-        padding-left: 15px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -69,16 +68,20 @@
         text-decoration-line: underline;
         color: $yellow;
    
-        & ::before { 
-                content: '';
-                width: 0;
-                height: 0;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-                border-left: 13px solid $yellow;
-                margin-right: 10px;
-                display: block;
-                float: left; 
+        &::before { 
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 13px solid $yellow;
+            margin: 0 15px;
+            display: block;
+            float: left; 
+
+            @include media ('>=768px') {
+                margin: 0 5px;
+            }
         }
     }    
 }
