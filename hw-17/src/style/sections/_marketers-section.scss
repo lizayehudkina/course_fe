@@ -1,13 +1,16 @@
 .marketers-section {
     .container {
         margin-bottom: 50px;
-        // border-bottom: 1px solid rgba(188, 208, 229, 0.496913);
 
         @include media ('>=768px') {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row-reverse;
             align-items: center;
+            margin-bottom: 15px;
+        }
+
+        @include media ('>=1024px') {
             margin-bottom: 146px;
         }
     }
@@ -18,7 +21,7 @@
 
     @include media ('>=768px') {
         width: 50%;
-        padding: 0 41px;
+        padding: 0 15px 0 0;
     }
 }
 
