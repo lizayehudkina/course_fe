@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $poppins;
+    color: $light-black;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background-color: $yellow;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+.btn-xl {
+    @extend .btn;
+    margin-bottom: 10px;
+
+    @include media ('>=768px') {
+    padding: 15px 41px;
+    margin-bottom: 0;
+    }
+}

@@ -1,0 +1,95 @@
+.footer {
+    .container {
+        border-top: 1px solid rgba(188, 208, 229, 0.496913);
+        padding-top: 30px;
+        font: $poppins;
+
+        @include media ('>=768px') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 50px;
+
+            & :last-of-type {
+                align-self: flex-end;
+            }
+
+            @include media ('>=1024px') {
+                padding-top: 102px;
+            }
+        }
+
+        .img-holder {
+            margin-bottom: 10px;
+            max-width: 120px;
+
+            @include media ('>=768px') {
+                max-width: 150px;
+            }
+
+            @include media ('>=1024px') {
+                max-width: 185px;
+            }
+        }
+
+        .nav-footer-list {
+            list-style: none;
+            margin-bottom: 15px;
+
+            @include media ('>=768px') {
+                column-count: 2;
+            }
+
+            .nav-footer-link {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 30px;
+                color: $light-black;
+                padding-left: 25px;
+
+                @include media ('>=768px') {
+                    padding-left: 15px;
+                }
+                
+                @include media ('>=1024px') {
+                    font-size: 16px;
+                    line-height: 35px;
+                }
+            }
+        }
+
+      .footer-form {
+          padding-left: 25px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-self: start;
+
+          .input-form {
+                border: 1px solid #BCD0E5;
+                background-color: white;
+                width: 175px;
+                height: 40px;
+                margin-bottom: 10px;
+            
+              @include media ('>=768px') {
+                max-width: 325px;
+              }
+          }
+
+          .btn-xl {
+              max-width: 125px;
+              max-height: 39px;
+              font-size: 14px;
+              padding: 10px 15px;
+
+              @include media ('>=768px') {
+                padding: 10px 10px;
+              }
+          }
+      }  
+    }
+}
+
