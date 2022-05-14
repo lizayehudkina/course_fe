@@ -6,7 +6,7 @@
 
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1150px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -16,4 +16,23 @@ p,
 ul {
     margin: 0;
     padding: 0;
+}
+
+.search {
+    display: flex;
+    align-items: flex-start;
+
+    .search-item {
+        padding: 0 8px;
+    }
+
+    .search-button {
+       border: none;
+       background-color: transparent;
+    }
+
+    .search-img {
+        width:24px;
+        height: 24px;
+    }
 }

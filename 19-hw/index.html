@@ -5,38 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manifest</title>
+    <link rel="stylesheet" href="src/style/main.css">
+    <script src="src/js/main.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo-holder">
-            <img src="src/img/logo.svg" alt="img description">
-        </div>
+    <header class="header js-header">
+        <div class="container">
+            <div class="logo-holder">
+                <img src="src/img/logo.svg" alt="img description">
+            </div>
 
-        <div class="nav-holder">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="search">
-            <button>
-                <img src="src/img/search.svg" alt="img description">
-            </button>
+            <div class="nav-holder js-nav">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search">
+                <button class="search-item search-button">
+                    <img class="search-img" src="src/img/search.svg" alt="img description">
+                </button>
+                <button class="search-item nav-opener js-nav-opener">
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -53,9 +61,47 @@
                 </div>
                 <div class="img-holder">
                     <picture class="picture">
-                        <source srcset="src/img/img-1.png" media="(min-width:768px)">
-                        <img src="src/img/img-1-phone.png" alt="img description">
+                        <source srcset="src/img/img-1-laptop.jpg" media="(min-width:768px)">
+                        <img src="src/img/img-1-phone.jpg" alt="img description">
                     </picture>
+                </div>
+
+                <div class="half-section left-section">
+                    <h2>Project Overview</h2>
+                        <div class="text-holder-hero-section-left">
+                        <p>FashHanger is a bespoke sustainable high-fashion accessory company based out of Berlin, 
+                            currently operated by Siesly and her sister Ashely. 
+                            They needed help for a big rebrand and wanted to relaunch their website.
+                            <br>
+                            Their goals were simple, create a unique e-commerce store that bring a wonderful 
+                            shopping experience at every stage of the buyer’s journey.</p>
+                    </div>
+                </div>
+
+                <div class="half-section right-section">
+                    <h2>Year</h2>
+                    <div class="text-holder-hero-section-right">
+                        <p>2019</p>
+                    </div>
+
+                    <h2>Platform</h2>
+                    <div class="text-holder-hero-section-right">
+                        <p>Shopify, Webflow</p>
+                    </div>
+
+                    <h2>Role</h2>
+                    <div class="text-holder-hero-section-right">
+                        <p>Research, Design</p>
+                    </div>
+
+                    <h2>Deliverables</h2>
+                    <div class="text-holder-hero-section-right">
+                        <p><a href="#">www.fashhanger.com</a></p>
+                    </div>
+
+
+
+
                 </div>
 
 
