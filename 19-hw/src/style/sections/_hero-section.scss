@@ -1,0 +1,106 @@
+.small-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.5em;
+    padding-bottom: 39px;
+
+    @include media ('>=768px') {
+        line-height: 24px;
+        padding-bottom: 48px;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    padding-bottom: 52px;
+
+    @include media ('>=768px') {
+        font-size: 48px;
+        line-height: 64px;
+        padding-bottom: 52px;
+    }
+}
+
+.picture-hero-section-phone {
+    padding-bottom: 48px;
+}
+
+.picture-hero-section-laptop {
+    padding-bottom: 130px;
+}
+
+.flex {
+
+    @include media ('>=768px') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
+
+.left-section {
+    padding-bottom: 64px;
+
+    @include media ('>=768px') {
+        padding: 0px;
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 23px;
+        line-height: 38px;
+        letter-spacing: 0.1em;
+        padding-bottom: 16px;
+        color: $black;
+
+        @include media ('>=768px') {
+            padding-bottom: 40px;
+        }
+    }
+
+    .text-holder-hero-section-left {
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $grey;
+    }  
+}
+
+.right-section {
+    @include media ('>=768px') {
+        padding-right: 150px;
+    }
+
+
+    h2 {
+        font-size: 23px;
+        line-height: 38px;
+        letter-spacing: 0.1em;
+        padding-bottom: 0;
+        color: $black;
+
+        @include media ('>=768px') {
+            padding-bottom: 0;
+            width: 50%;
+        }
+    }
+
+    .text-holder-hero-section-right {
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        padding-bottom: 46px;
+        color: $grey;
+    }
+
+    a {
+        text-decoration: none;
+
+        @extend .text-holder-hero-section-right
+    }
+}
+
