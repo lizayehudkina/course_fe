@@ -12,7 +12,6 @@ footer {
             align-items: center;
         }
 
-
         .first-list {
             list-style: none; 
 
@@ -95,11 +94,13 @@ footer {
             font-size: 12px;
             line-height: 20px;
             letter-spacing: 0.1em; 
+        }
 
+        .copyright-text {
             @include media ('>=768px') {
                 display: flex;
                 align-self: flex-end;
-                }
+            }
         }
     }
 }
