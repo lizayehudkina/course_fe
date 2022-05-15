@@ -1,0 +1,36 @@
+.global-section {
+    .container {
+        h2 {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            color: $black;
+            padding-bottom: 32px;
+
+            @include media ('>=768px') {
+                padding-bottom: 40px;
+            }
+        }
+
+        .img-holder {
+            padding-bottom: 48px;
+
+            @include media ('>=768px') {
+                padding-bottom: 50px;
+            }
+        }
+
+        .text-holder-global-section {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: $grey;
+            padding-bottom: 64px;
+
+            @include media ('>=768px') {
+                padding-bottom: 128px;
+            }
+        }
+    }
+}

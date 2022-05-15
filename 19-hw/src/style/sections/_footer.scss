@@ -1,0 +1,105 @@
+footer {
+    background-color: $dark-white;
+    color: $black;
+    .container {
+        padding: 64px 0 68px 16px;
+
+        @include media ('>=768px') {
+            padding: 137px 0 137px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .first-list {
+            list-style: none; 
+
+            .footer-question {
+                font-size: 33px;
+                line-height: 50px;
+                letter-spacing: 0.05em;
+                padding: 0 0 18px 0;
+
+                @include media ('>=768px') {
+                    font-size: 48px;
+                    line-height: 64px;
+                    padding: 0 0 35px 0;
+                }
+            }
+
+            .footer-number {
+                padding-bottom: 16px;
+
+                @include media ('>=768px') {
+                    padding-bottom: 17px;
+                }
+
+                a{
+                    font-size: 16px;
+                    line-height: 27px;
+                    letter-spacing: 0.1em;
+                    text-decoration: none;
+                    color: $black;   
+                }
+            }
+
+            .footer-mail {
+                padding-bottom: 48px;
+
+                @include media ('>=768px') {
+                    padding-bottom: 0;
+                }
+
+                a {
+                    font-size: 16px;
+                    line-height: 27px;
+                    letter-spacing: 0.1em;
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+
+        .second-list {
+            list-style: none;
+            padding-bottom: 48px;
+
+            @include media ('>=768px') {
+                padding: 0;
+            }
+
+            .footer-list-item {
+                padding-bottom: 24px;
+
+                &:last-of-type {
+                    padding: 0;
+                }
+
+                @include media ('>=768px') {
+                    padding-bottom: 26px;
+                }
+            }
+
+                .footer-list-link {
+                    text-decoration: none;
+                    color: $black;
+                    font-size: 16px;
+                    line-height: 27px;
+                    letter-spacing: 0.1em;
+                }
+        }
+
+        .copyright-holder {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.1em; 
+
+            @include media ('>=768px') {
+                display: flex;
+                align-self: flex-end;
+                }
+        }
+    }
+}
