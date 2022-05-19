@@ -1,0 +1,15 @@
+.why-choose-us-section {
+    background: url('../img/background-2.png');
+    background-size: cover;
+
+    .container {
+        text-align: center;
+        padding: 60px 15px 60px 15px;
+
+
+        @include media ('>=768px') {
+            padding: 118px 15px 117px 15px;
+        }
+    }
+}
+
