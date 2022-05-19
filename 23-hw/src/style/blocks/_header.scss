@@ -1,0 +1,134 @@
+.header {
+    background-color: $blue;
+    padding: 10px 0;
+
+    @include media ('>=768px') {
+        padding: 32px 0 31px;
+    }
+
+    &.active {
+        .nav-holder {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav-opener {
+            span {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 20px;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+    }
+}
+
+.nav-holder {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $blue;
+    height: 100vh;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+
+    @include media ('>=768px') {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media ('>=768px') {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 -10px;
+        }
+    }
+
+    .nav-item {
+        margin: 0 0 20px;
+        text-align: center;
+
+        @include media ('>=768px') {
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+
+    .nav-link {
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+        display: block;
+    }
+}
+
+.nav-opener {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+
+    @include media ('>=768px') {
+        display: none;
+    }
+
+    &::before,
+    &::after,
+    span {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 1px;
+        background-color: $white;
+        transition: all ease-in-out 0.3s;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
