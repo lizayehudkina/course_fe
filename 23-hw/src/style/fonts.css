@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'josefin';
+    src: url('../fonts/fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/fonts/josefinsans-variablefont_wght-webfont.woff') format('woff'),
+         url('../fonts/fonts/josefinsans-variablefont_wght-webfont.ttf') format('truetype'),
+         url('../fonts/fonts/josefinsans-variablefont_wght-webfont.svg#josefin_sansthin') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'aleo';
@@ -6,19 +15,5 @@
          url('../fonts/fonts/aleo-regular-webfont.ttf') format('truetype'),
          url('../fonts/fonts/aleo-regular-webfont.svg#aleoregular') format('svg');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'josefin';
-    src: url('../fonts/fonts/JosefinSans-Regular.ttf') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'josefin';
-    src: url('../fonts/fonts/JosefinSans-Bold.ttf') format('ttf');
-    font-weight: 700;
     font-style: normal;
 }

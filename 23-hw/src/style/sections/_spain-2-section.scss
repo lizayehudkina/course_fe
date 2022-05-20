@@ -1,19 +1,18 @@
 .spain-2-section {
-    background: url('../img/background-4.png');
     background-size: cover;
+    padding: 25px 15px 30px 15px;
+
+    @include media ('>=768px') {
+        padding: 100px 15px;
+    }
+
+    @include media ('>=1024px') {
+        padding: 227px 15px 100px 15px;
+    }
 
     .container {
-        padding: 25px 15px 30px 15px;
         display: flex;
         justify-content: flex-end;
-
-        @include media ('>=768px') {
-            padding: 100px 15px;
-        }
-
-        @include media ('>=1024px') {
-            padding: 227px 15px 100px 15px;
-        }
     }
 }
 

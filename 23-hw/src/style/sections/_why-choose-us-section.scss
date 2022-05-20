@@ -1,23 +1,22 @@
 .why-choose-us-section {
-    background: url('../img/background-2.png');
     background-size: cover;
+    padding: 30px 15px;
+
+    @include media ('>=768px') {
+        padding: 60px 15px;
+    }
+
+    @include media ('>=1024px') {
+        padding: 118px 15px 117px 15px;
+    }
 
     .container {
         text-align: center;
-        padding: 30px 15px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-
-        @include media ('>=768px') {
-            padding: 60px 15px;
-        }
-
-        @include media ('>=1024px') {
-            padding: 118px 15px 117px 15px;
-        }
+        align-items: center;   
     }
 
     .left-section {
@@ -53,7 +52,7 @@
             max-width: 560px;
             font-family: $josefin;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 18px;
             letter-spacing: 1.6px;
             color: $dark-white;
