@@ -1,0 +1,68 @@
+.spain-1-section {
+    background: url('../img/background-3.png');
+    background-size: cover;
+
+    .container {
+        padding: 25px 15px 30px 15px;
+
+        @include media ('>=768px') {
+            padding: 100px 15px;
+        }
+
+        @include media ('>=1024px') {
+            padding: 227px 15px 99px 15px;
+        }
+    }
+}
+
+.spain-1 {
+    max-width: 540px;
+    background-color: $brown-opacity;
+    padding: 0 15px 0 15px;
+    text-align: center;
+
+    @include media ('>=768px') {
+        padding-left: 30px;
+        text-align: start;
+    }
+
+    .country {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1.5px;
+        color: $dark-white;
+        padding: 20px 0;
+
+        @include media ('>=768px') {
+            font-size: 20px;
+            line-height: 26px;
+            padding: 47px 0 23px 0;
+        }
+    }
+
+    .hotel {
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 13px;
+
+        @include media ('>=768px') {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .explain {
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark-white;
+        padding-bottom: 25px;
+
+        @include media ('>=768px') {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 46px;
+        }
+    }
+}

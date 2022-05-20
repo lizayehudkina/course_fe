@@ -30,3 +30,28 @@ img {
     display: block;
     max-width: 100%;
 }
+
+.book-button-holder {
+    padding-bottom: 30px;
+
+    @include media ('>=768px') {
+        padding-bottom: 49px;
+    }
+
+    a {
+        background-color: $blue;
+        padding: 10px 30px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: $white;
+
+        @include media ('>=768px') {
+            padding: 18px 65px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}

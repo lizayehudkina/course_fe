@@ -4,11 +4,106 @@
 
     .container {
         text-align: center;
-        padding: 60px 15px 60px 15px;
-
+        padding: 30px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
         @include media ('>=768px') {
+            padding: 60px 15px;
+        }
+
+        @include media ('>=1024px') {
             padding: 118px 15px 117px 15px;
+        }
+    }
+
+    .left-section {
+        text-align: center;
+
+        @include media ('>=768px') {
+            width: 60%;
+            text-align: center;
+        }
+
+        @include media ('>=1024px') {
+            width: 60%;
+            text-align: start;
+        }
+
+        h2 {
+            font-size: 22px;
+            line-height: 16px;
+            color: $white;
+            padding-bottom: 25px;
+
+            @include media ('>=768px') {
+                font-size: 36px;
+                line-height: 26px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .choose-us-text-holder {
+            max-width: 560px;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 1.6px;
+            color: $dark-white;
+            padding-bottom: 20px;
+
+            @include media ('>=768px') {
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 45px;
+            }
+        }
+
+        .explore-button-holder {
+            margin-bottom: 35px;
+
+            a {
+                background-color: $blue;
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                color: $white;
+
+                @include media ('>=768px') {
+                    padding: 20px 37px;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }  
+    }
+
+    .right-section {
+        @include media ('>=768px') {
+            width: 40%;
+        }
+
+        .img-holder {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .img-holder-1 {
+            padding: 10px 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .img-holder-2 {
+            padding: 10px 30px;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }

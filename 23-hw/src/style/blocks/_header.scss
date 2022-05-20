@@ -6,6 +6,15 @@
         padding: 32px 0 31px;
     }
 
+    @include media ('>=1024px') {
+        padding: 32px 0 31px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
     &.active {
         .nav-holder {
             opacity: 1;
@@ -47,7 +56,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: $blue;
+    background: -webkit-linear-gradient(top, rgba(84,116,253,1) 31%,rgba(232,232,232,1) 88%,rgba(255,255,255,1) 99%);
+    // background-color: $blue;
     height: 100vh;
     z-index: 1;
     transition: all ease-in-out 0.3s;
