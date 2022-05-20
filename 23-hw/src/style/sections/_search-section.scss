@@ -12,6 +12,7 @@
         }
 
         h1 {
+            font-family: $josefin;
             font-weight: 700;
             font-size: 26px;
             line-height: 18px;
@@ -19,7 +20,7 @@
             text-transform: uppercase;
             color: $white;
             margin-bottom: 10px;
-
+            
             @include media ('>=768px') {
                 font-size: 48px;
                 line-height: 26px;
@@ -27,6 +28,7 @@
         }
 
         .under-title-text {
+            font-family: $josefin;
             font-size: 12px;
             line-height: 14px;
             letter-spacing: 4.82px;
@@ -62,6 +64,7 @@
         max-width: 503px;
         height: 30px;
         color: $grey;
+        font-family: $josefin;
         font-size: 8px;
         line-height: 20px;
         letter-spacing: 2.8px;
@@ -91,6 +94,7 @@
         color: $white;
         background-color: $blue;
         border: 2px solid $white;
+        font-family: $aleo;
         font-size: 8px;
         line-height: 22px;
         letter-spacing: 1.4px;
@@ -112,6 +116,7 @@
 }
 
 .scroll {
+    font-family: $josefin;
     font-size: 12px;
     line-height: 24px;
     text-align: center;

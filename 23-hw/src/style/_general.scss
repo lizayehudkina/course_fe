@@ -32,6 +32,8 @@ img {
 }
 
 .book-button-holder {
+    font-family: $aleo;
+    font-weight: 400;
     padding-bottom: 30px;
 
     @include media ('>=768px') {

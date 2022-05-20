@@ -14,6 +14,8 @@
         }
 
         h2 {
+            font-family: $aleo;
+            font-weight: 400;
             font-size: 26px;
             line-height: 24px;
             color: $white;
@@ -32,6 +34,8 @@
         }
 
         .blockquote {
+            font-family: $josefin;
+            font-weight: 400;
             background-color: $brown;
             display: flex;
             flex-wrap: wrap;

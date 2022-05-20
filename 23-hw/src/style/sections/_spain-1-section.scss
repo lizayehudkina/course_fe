@@ -27,6 +27,8 @@
     }
 
     .country {
+        font-family: $josefin;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 1.5px;
@@ -41,6 +43,8 @@
     }
 
     .hotel {
+        font-family: $josefin;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         text-transform: uppercase;
@@ -54,6 +58,8 @@
     }
 
     .explain {
+        font-family: $josefin;
+        font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         color: $dark-white;
