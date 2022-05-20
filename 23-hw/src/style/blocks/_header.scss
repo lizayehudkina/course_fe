@@ -78,6 +78,7 @@
         margin: 0;
 
         @include media ('>=768px') {
+            background-color: $blue;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
