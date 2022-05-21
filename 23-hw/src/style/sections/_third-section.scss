@@ -1,5 +1,7 @@
 .third-section {
     background-color: $brown;
+    position: relative;
+
 
     .container {
         padding: 30px 15px 25px 15px;
@@ -47,12 +49,20 @@
 
         .icon-search {
             color: $blue;
-        
+
+            @include media ('>=1024px') {
+                &::after {
+                    content: url("/for-github/23-hw/src/img/line.svg");
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                }
+            }
         }
 
         .icon-select {
             color: $red;
-
         }
 
         .icon-book {
