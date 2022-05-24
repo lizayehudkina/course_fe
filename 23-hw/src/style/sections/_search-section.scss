@@ -1,9 +1,10 @@
 .search-section {
-    padding: 132px 15px 50px 15px;
+    padding: 132px 0 50px 0;
     background-size: cover;
+    min-height: 100vh;
 
     @include media ('>=768px') {
-        padding: 264px 15px 132px 15px;
+        padding: 264px 0 132px 0;
     }
 
     .container {
@@ -43,10 +44,8 @@
 }
 
 .search-form {
-    position: relative;
     max-width: 653px;
     margin: 0 auto;
-    background-color: $white;
     margin-bottom: 56px;
 
     @include media ('>=768px') {
@@ -54,12 +53,9 @@
     }
 
     input {
-        position: absolute;
-        top: 0;
-        left: 0;
         border: none;
         width: 100%;
-        max-width: 503px;
+        max-width: 250px;
         height: 30px;
         color: $grey;
         font-family: $josefin;
@@ -67,33 +63,29 @@
         font-size: 8px;
         line-height: 20px;
         letter-spacing: 2.8px;
-        text-align: start;
         padding-left: 5px;
         outline: none;
+        text-align: center;
+        margin-bottom: 5px;
 
         &:focus {
             border: 2px solid $blue;
         }
 
         @include media ('>=768px') {
+            max-width: 503px;
             height: 63px;
             font-size: 14px;
             line-height: 26px; 
-            text-align: center;
-            cursor: default;
         }
     }
 
     button {
         border: none;
-        position: absolute;
-        top: 0;
-        right: 0;
         max-width: 153px;
         height: 30px;
         color: $white;
         background-color: $blue;
-        border: 2px solid $white;
         font-family: $aleo;
         font-size: 8px;
         line-height: 22px;
@@ -105,6 +97,9 @@
             height: 63px;
             font-size: 14px;
             line-height: 26px;
+            margin-left: -8px;
+            border: 2px solid $white;
+
         }
 
         i { 
@@ -123,6 +118,8 @@
     letter-spacing: 2.8px;
     color: $white;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
     
     @include media ('>=768px') {
         font-size: 14px;

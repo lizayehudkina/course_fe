@@ -43,7 +43,7 @@
 
             @include media ('>=768px') {
                 padding-bottom: 40px;
-                font-size: 36px;
+                font-size: 60px;
             }
         }
 
@@ -52,7 +52,7 @@
 
             @include media ('>=1024px') {
                 &::after {
-                    content: url("/for-github/23-hw/src/img/line.svg");
+                    content: url("../../img/line.svg");
                     position: absolute;
                     top: 0;
                     left: 0;
