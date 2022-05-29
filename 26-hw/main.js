@@ -23,7 +23,7 @@ console.log(Number(c) + d);
 let flashDriveVolume = prompt('Вкажи обсяг флешки в ГБ');
 let mbVolume = flashDriveVolume * 1024;
 let resultMemory = mbVolume / 820;
-console.log('На флешку такого обсягу поміститься ' + (Math.trunc(resultMemory)) + ' файл (ли/лів) розміром 820 МБ');
+alert('На флешку такого обсягу поміститься ' + (Math.trunc(resultMemory)) + ' файл (ли/лів) розміром 820 МБ');
 
 
 // 4. Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. 
@@ -36,7 +36,7 @@ console.log (userCanBuyChocolates);
 let costAllChoclates = Math.trunc(chocolateCost * userCanBuyChocolates);
 let userMoneyLeft = Math.trunc(userMoney - costAllChoclates);
 console.log (userMoneyLeft);
-console.log('На ' + userMoney + ' гривень/ні ти можеш купити ' + userCanBuyChocolates + ' шоколадку/дки/док' + ' і в тебе залишиться ' + userMoneyLeft + ' гривень/ні!');
+alert('На ' + userMoney + ' гривень/ні ти можеш купити ' + userCanBuyChocolates + ' шоколадку/дки/док' + ' і в тебе залишиться ' + userMoneyLeft + ' гривень/ні!');
 
 
 // 5. Запитай у користувача тризначне число і виведи його задом наперед. 
@@ -51,7 +51,7 @@ function getReversedNum(userNumber) {
     }
     return result;
   }
-  console.log(getReversedNum(userNumber));
+  alert(getReversedNum(userNumber));
 
 //   6. Користувач вводить суму вкладу в банк на 2 місяці, 
 //   з процентною ставкою депозиту 5% річних. 
@@ -60,7 +60,7 @@ function getReversedNum(userNumber) {
 let userSumOfDeposit = prompt('Вкажи свою суму вкладу');
 let percentage = userSumOfDeposit * 1.05;
 let userReseive = (percentage - userSumOfDeposit) / 12 * 2;
-console.log ('По депозиту на 5% річних за 2 місяці ти отримаєш ' + ((parseInt(userReseive * 100)) / 100));
+alert('По депозиту на 5% річних за 2 місяці ти отримаєш ' + ((parseInt(userReseive * 100)) / 100));
 
 
 // // 7. Що повернуть вираження:
