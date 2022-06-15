@@ -26,29 +26,15 @@ let playList = [
      song:"ENTER SANDMAN"}
     ];
 
-    let container = document.querySelector('.first');
-    let playlistLenght = playList.length;
-// let songList = document.createElement('<ol>');
-//     songList.innerHTML = 
+    // let container = document.querySelector('.first');
+    // let playlistLenght = playList.length;
+    // let songList = document.createElement('<ol>');
+    // songList.innerHTML = '<p> Playlist </p>';
     
-//     for (let i = 0; i < playlistLenght; i++) {
-//         container.createElement "<li>" + playList[i].author + " - " + playList[i].song + "</li>";
-//     }
+    // for (let i = 0; i < playlistLenght; i++) {
+    //     container.createElement "<li>" + playList[i].author + " - " + playList[i].song + "</li>";
+    // }
     
-
-
-//     // let text = "<ol>";
-//     // for (let i = 0; i < playlistLenght; i++) {
-//     //     text += "<li>" + playList[i].author + " - " + playList[i].song + "</li>";
-//     // }
-//     // text += "</ol>";
-
-//     // let firstTask = document.getElementsByClassName ("first");
-//     // firstTask.innerHTML = text;
-
-//     // console.log (firstTask.innerHTML);
-
-//     // firstTask.append(text);
 
 // 2
 
