@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2 */
+
+body {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 3px 3px 3px 3px rgb(111, 184, 240);
+    background-color: rgb(255, 255, 113);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.quote-author {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.quote-author:last-child {
+    display: block;
+    padding-bottom: 30px;
+}
+
+button {
+    background-color: rgb(111, 184, 240);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+
