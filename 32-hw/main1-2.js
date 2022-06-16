@@ -26,14 +26,14 @@ let playList = [
      song:"ENTER SANDMAN"}
     ];
 
-    // let container = document.querySelector('.first');
-    // let playlistLenght = playList.length;
-    // let songList = document.createElement('<ol>');
-    // container.body.append(songList);
+    let container = document.querySelector('.first');
+    let playlistLenght = playList.length;
+    let songList = document.createElement('ol');
+    container.append(songList);
     
-    // for (let i = 0; i < playlistLenght; i++) {
-    //     songList.insertAdjacentHTML ("<li>" + playList[i].author + " - " + playList[i].song + "</li>")
-    // }
+    for (let i = 0; i < playlistLenght; i++) {
+        songList.insertAdjacentHTML ('beforeend', '<li>' + playList[i].author + " - " + playList[i].song + '</li>')
+    }
     
 
 // 2
