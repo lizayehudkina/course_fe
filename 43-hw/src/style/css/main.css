@@ -1,0 +1,51 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: "pic-2" "pic-3" "pic-1" "pic-4" "pic-5";
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "pic-2 pic-3" "pic-1 pic-1" "pic-4 pic-5";
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-areas: "pic-1 pic-1 pic-2 pic-3" "pic-1 pic-1 pic-4 pic-5";
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.grid-item-1 {
+  grid-area: pic-1;
+}
+
+.grid-item-2 {
+  grid-area: pic-2;
+}
+
+.grid-item-3 {
+  grid-area: pic-3;
+}
+
+.grid-item-4 {
+  grid-area: pic-4;
+}
+
+.grid-item-5 {
+  grid-area: pic-5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+.grid-container { 
+        display: grid;
+        grid-template-areas: 
+            "pic-2"
+            "pic-3"
+            "pic-1"
+            "pic-4"
+            "pic-5"
+            ;
+        gap: 10px;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
+        // gap: 10px;
+    
+    @include respond-to ('tablet') {
+        display: grid;
+        grid-template-areas: 
+            "pic-2 pic-3"
+            "pic-1 pic-1"
+            "pic-4 pic-5";
+    }
+
+    @include respond-to ('laptop') {
+        grid-template-areas: 
+            "pic-1 pic-1 pic-2 pic-3"
+            "pic-1 pic-1 pic-4 pic-5"
+            ;
+    }
+}
+    
+img {
+    display: block;
+    width: 100%;
+}
+
+.grid-item-1 {
+    grid-area:pic-1;
+}
+
+.grid-item-2 {
+    grid-area:pic-2;
+}
+
+.grid-item-3 {
+    grid-area:pic-3;
+}
+
+.grid-item-4 {
+    grid-area:pic-4;
+}
+
+.grid-item-5 {
+    grid-area:pic-5; 
+}
